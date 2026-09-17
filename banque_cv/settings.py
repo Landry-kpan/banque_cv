@@ -1,4 +1,3 @@
-
 """
 Django settings for banque_cv project.
 
@@ -27,7 +26,7 @@ SECRET_KEY = 'django-insecure-ywlfc7^byko8&0s8bxa*nc@-ol1)ca3g5f)njo&skw(%dgkt5*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com']
 
 
 # Application definition
