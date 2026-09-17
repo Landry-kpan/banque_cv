@@ -127,7 +127,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Emplacement où collecter les fichiers statiques
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 # Répertoires où Django recherche les fichiers statiques
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
