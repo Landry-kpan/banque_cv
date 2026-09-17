@@ -1,3 +1,5 @@
+gunicorn
+whitenoise
 annotated-types==0.7.0
 anyio==4.6.2.post1
 arabic-reshaper==3.0.0
